@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+    {% block main %}
+
+	<table id="example" class="display table table-bordered">
+		<thead class="thead-dark">
+			<tr>
+				<th scope="col">Name</th>
+				<th scope="col">Blood Group</th>
+				<th scope="col">Gender</th>
+				<th scope="col">Phone</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			{% for row in reader %}
+				<tr>
+			        <td>{{row['Name']}}</td> 
+			        <td>{{row['Blood Group']}}</td>
+			        <td>{{row['Gender']}}</td>
+			        <td>{{row['Phone']}}</td>
+		        </tr>
+		    {% endfor %}
+		</tbody>
+	</table>
+
+    {% endblock %}

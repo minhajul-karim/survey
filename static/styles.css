@@ -1,0 +1,24 @@
+/* Reduce the width of input type = text */
+
+.form-control,
+.custom-select
+{
+	width: 250px;
+	display: block;
+}
+
+input, 
+select,
+.checkboxes,
+.btn-primary {
+	margin-top: 10px;
+}
+
+
+/*Responsive form*/
+@media all and (max-width: 350px)
+{
+	.p-5 {
+		padding: 10px 20px !important;
+	}
+}
